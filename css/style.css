@@ -1,0 +1,22 @@
+body {
+  background-color: white;
+}
+
+.titre-logo {
+  display: flex;
+  justify-content: center;
+  font-family: Shrikhand;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.ville input {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: lightgray;
+  font-family: Roboto;
+  border-style: none;
+}/*# sourceMappingURL=style.css.map */

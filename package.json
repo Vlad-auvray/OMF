@@ -1,0 +1,22 @@
+{
+  "name": "omf",
+  "version": "1.0.0",
+  "description": "P3 OC ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vlad-auvray/OMF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vlad-auvray/OMF/issues"
+  },
+  "homepage": "https://github.com/Vlad-auvray/OMF#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

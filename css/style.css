@@ -84,6 +84,10 @@ h1 {
   font-family: Shrikhand;
 }
 
+.anim-fonct {
+  counter-reset: steps;
+}
+
 .anim-fonct ol {
   display: flex;
   flex-direction: column;
@@ -92,18 +96,20 @@ h1 {
 }
 
 .anim-fonct li {
-  width: 75%;
+  width: 60%;
   padding: 20px 30px 20px 30px;
-  border: solid 0.5px;
-  border-radius: 15px;
+  border-radius: 30px;
   margin-bottom: 15px;
   font-family: Roboto;
+  font-weight: bold;
+  text-align: left;
   background-color: #f6f6f6;
   box-shadow: 2px 1px 8px -3px black;
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-content: space-around;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
 }
 
 .anim-fonct li::before {
@@ -116,5 +122,18 @@ h1 {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0.8rem;
+  left: -1rem;
+}
+
+.anim-fonct li:hover {
+  background-color: rgba(255, 121, 218, 0.3);
+  cursor: pointer;
+  color: #9356DC;
+}
+
+.fonct-icon {
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */

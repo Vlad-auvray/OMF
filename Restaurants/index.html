@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1, user-scalable=yes">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@ Réservez le menu qui vous convient
 <section class="fonctionnement">
 <h1>Fonctionnement</h1>
 <div class="anim-fonct">
-    <ol>
+    <ol class="anim-fonct-list">
         <li><i class="fa-solid fa-mobile-screen fonct-icon"></i> Choisissez un restaurant</li>
         <li><i class="fa-solid fa-list-ul fonct-icon"></i> Composez votre menu</li>
         <li><i class="fa-solid fa-store fonct-icon"></i> Dégustez au restaurant</li>
@@ -47,41 +47,56 @@ Réservez le menu qui vous convient
 
 <div class="card-list">
 
-<a href="/menu1.html" class="card new">
+<a href="menu1.html" class="card new">
     <div class="card_img1"> </div>
     <div class="card_detail"> 
+        <div class="card-detail-txt">
         <h3>La Palette du goût</h3>
      <p>Ménilmontant</p>
-     <i class="fa-thin fa-heart"></i>
-    </div>
+     </div>
+     <button class="btn_like">
+        <i class="fa-regular fa-heart"></i>
+        </button>
+</div>
 </a>
 
 
-<a href="/menu2.html" class="card new">
+<a href="menu2.html" class="card new">
     <div class="card_img2"> </div>
     <div class="card_detail"> 
+        <div class="card-detail-txt">
         <h3>La note enchantée</h3>
      <p>Charonne</p>
-     <i class="fa-thin fa-heart"></i>
     </div>
-
+     <button class="btn_like">
+     <i class="fa-regular fa-heart"></i>
+     </button>
+    </div>
 </a>
 
-<a href="/menu3.html" class="card">
+<a href="menu3.html" class="card">
     <div class="card_img3"> </div>
     <div class="card_detail"> 
+        <div class="card-detail-txt">
         <h3>À la française</h3>
      <p>Cité Rouge</p>
-     <i class="fa-thin fa-heart"></i>
+    </div>
+    <button class="btn_like">
+        <i class="fa-regular fa-heart"></i>
+        </button>
     </div>
 </a>
-<a href="/menu4.html" class="card">
+<a href="menu4.html" class="card">
     <div class="card_img4"> </div>
     <div class="card_detail"> 
+        <div class="card-detail-txt">
         <h3>Le délice des sens</h3>
      <p>Folie-Méricourt</p>
-     <i class="fa-thin fa-heart"></i>
     </div>
+    <button class="btn_like">
+        <i class="fa-regular fa-heart"></i>
+        </button>
+</div>
 </a>
 
 </div>
@@ -94,10 +109,10 @@ Réservez le menu qui vous convient
         <footer>
 <div class="logo-footer">Ohmyfood</div>
 <ul class="footer_list">
-    <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
-    <li><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
-    <li>Mentions légales</li>
-    <li>Contact</li>
+    <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant </a></li>
+    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
+    <li><a href="#">Mentions légales</a></li>
+    <li><a href="mailto:noreply@ohmyfood.miam">Contact</a></li>
 </ul>
             
         </footer>

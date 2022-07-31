@@ -192,6 +192,7 @@ h1 {
   margin-bottom: 3%;
   text-decoration: none;
   box-shadow: 2px 1px 8px -3px black;
+  position: relative;
 }
 
 .new {
@@ -246,12 +247,21 @@ h1 {
 
 .card_detail {
   display: flex;
-  flex-direction: column;
-  align-self: flex-start;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  align-content: center;
+  justify-content: space-between;
   padding-top: 0;
   padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   text-decoration: none;
   color: black;
+}
+
+.card-detail-txt {
+  flex: 1;
 }
 
 .card_detail p {
@@ -261,6 +271,21 @@ h1 {
 .card_detail h3 {
   margin-top: 10px;
   margin-bottom: 2px;
+}
+
+.btn_like {
+  height: 35px;
+  width: 35px;
+  border: 0 solid transparent;
+  padding: 0;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 2rem;
+  background: none;
 }
 
 footer {
@@ -290,22 +315,41 @@ footer {
   margin-top: 5px;
 }
 
+.footer_list a {
+  text-decoration: none;
+  color: white;
+}
+
 /*Pages Resto*/
 .banner img {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 300px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.detail_menu {
+.header-menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+.detail_menu {
+  background-color: #f6f6f6;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
 }
 
 .nom-resto {
@@ -366,10 +410,59 @@ footer {
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5rem;
+  font-weight: bold;
 }
 
 .btn_cmd {
   display: flex;
   align-content: center;
   justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 789px) {
+  .anim-fonct ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .anim-fonct li {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+  }
+  .restaurant {
+    padding-right: 15px;
+  }
+  .card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width: 48%;
+  }
+  /*Pages Resto*/
+  .detail_menu {
+    display: flex;
+  }
+  .detail_menu_sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .detail_menu_sub_card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .elmt {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

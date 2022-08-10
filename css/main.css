@@ -30,6 +30,38 @@ header a {
   text-align: center;
 }
 
+footer {
+  background-color: #353535;
+  padding-left: 12px;
+  padding-bottom: 30px;
+}
+
+.logo-footer {
+  font-family: Shrikhand;
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.footer_list {
+  font-family: Roboto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer_list li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.footer_list a {
+  text-decoration: none;
+  color: white;
+}
+
 .ville {
   display: flex;
   flex-direction: row;
@@ -285,39 +317,36 @@ h1 {
   cursor: pointer;
   position: relative;
   font-size: 2rem;
-  background: none;
+  background-color: transparent;
 }
 
-footer {
-  background-color: #353535;
-  padding-left: 12px;
-  padding-bottom: 30px;
+/*.btn_like:hover{
+opacity: 0;
+transition: 0.5s;
+content: "";
+background: linear-gradient(0deg,#9356dc,#ff79da);
+}*/
+.icon_like {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.logo-footer {
-  font-family: Shrikhand;
-  color: white;
-  font-size: 25px;
-  padding-top: 10px;
-}
-
-.footer_list {
-  font-family: Roboto;
-  color: white;
+.icon_like_nobg {
+  transition-duration: 0.25s;
   display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  padding-left: 0;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer_list li {
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.footer_list a {
-  text-decoration: none;
-  color: white;
+.icon_like_bg {
+  transition-duration: 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Pages Resto*/
@@ -421,6 +450,33 @@ footer {
   margin-bottom: 20px;
 }
 
+.detail_menu_sub_confirmation {
+  background-color: #99E2D0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.icon_check {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.fa-check {
+  color: #99E2D0;
+}
+
+/*Responsive*/
 @media screen and (min-width: 789px) {
   .anim-fonct ol {
     display: flex;
@@ -443,7 +499,6 @@ footer {
   .card {
     width: 48%;
   }
-  /*Pages Resto*/
   .detail_menu {
     display: flex;
     justify-content: space-around;
@@ -453,16 +508,20 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .detail_menu_sub_card {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     max-width: 100%;
+    padding-right: 5px;
+    padding-right: 5px;
   }
   .elmt {
     text-overflow: ellipsis;
     overflow: hidden;
     max-width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

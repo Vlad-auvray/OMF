@@ -30,6 +30,7 @@ header a {
   text-align: center;
 }
 
+/*footer*/
 footer {
   background-color: #353535;
   padding-left: 12px;
@@ -319,13 +320,15 @@ h1 {
   font-size: 2rem;
   background-color: transparent;
 }
+.btn_like:hover {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
 
-/*.btn_like:hover{
-opacity: 0;
-transition: 0.5s;
-content: "";
-background: linear-gradient(0deg,#9356dc,#ff79da);
-}*/
 .icon_like {
   background-color: #fff;
   position: absolute;
@@ -333,20 +336,6 @@ background: linear-gradient(0deg,#9356dc,#ff79da);
   left: 0;
   height: 100%;
   width: 100%;
-}
-
-.icon_like_nobg {
-  transition-duration: 0.25s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon_like_bg {
-  transition-duration: 0.25s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*Pages Resto*/
@@ -415,6 +404,7 @@ background: linear-gradient(0deg,#9356dc,#ff79da);
   background-color: #fff;
   padding: 1rem;
   display: flex;
+  align-items: center;
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -436,28 +426,21 @@ background: linear-gradient(0deg,#9356dc,#ff79da);
 
 .prix {
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-weight: bold;
+  margin-right: 1rem;
 }
 
-.btn_cmd {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding-top: 20px;
-  margin-bottom: 20px;
-}
-
-.detail_menu_sub_confirmation {
+.confirm {
+  margin-right: -3rem;
   background-color: #99E2D0;
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.5s;
+  border-radius: 0 1rem 1rem 0;
+  transition: margin-right 0.5s;
+}
+.confirm:hover .elmt {
+  margin-right: 0;
 }
 
 .icon_check {
@@ -476,8 +459,21 @@ background: linear-gradient(0deg,#9356dc,#ff79da);
   color: #99E2D0;
 }
 
+.btn_cmd {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
 /*Responsive*/
 @media screen and (min-width: 789px) {
+  .anim-fonct {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
   .anim-fonct ol {
     display: flex;
     flex-direction: row;
@@ -487,6 +483,8 @@ background: linear-gradient(0deg,#9356dc,#ff79da);
     display: flex;
     flex-direction: row;
     margin-right: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   .restaurant {
     padding-right: 15px;
@@ -514,7 +512,6 @@ background: linear-gradient(0deg,#9356dc,#ff79da);
   .detail_menu_sub_card {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     max-width: 100%;
     padding-right: 5px;
     padding-right: 5px;

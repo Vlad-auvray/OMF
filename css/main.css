@@ -421,8 +421,8 @@ h1 {
 
 .detail_menu_sub h3::after {
   content: "";
-  width: 3rem;
-  height: 0.25rem;
+  width: 35px;
+  height: 4px;
   background-color: #99e2d0;
   position: absolute;
   left: 0;
@@ -439,8 +439,49 @@ h1 {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.elmt:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.elmt:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.elmt:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.elmt:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 
+@-webkit-keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .elmt-head {
   width: 80%;
   padding: 1rem 0 1rem 1rem;
@@ -576,11 +617,6 @@ h1 {
     padding-right: 5px;
     padding-right: 5px;
   }
-  .elmt {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    max-width: 100%;
-  }
 }
 /*Loader*/
 .loader-block {
@@ -590,26 +626,14 @@ h1 {
   left: 0;
   top: 0;
   background-color: hsla(0deg, 0%, 100%, 0.9);
-  -webkit-animation: loader 0.01s;
-          animation: loader 0.01s;
-  -webkit-animation-name: loader;
-          animation-name: loader;
-  -webkit-animation-duration: 0.01s;
-          animation-duration: 0.01s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  /* animation-delay: 0s;*/
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  /*animation-fill-mode: none;*/
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: disappear;
+          animation: disappear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -658,17 +682,21 @@ h1 {
           animation: rotation 1.5s linear infinite;
 }
 
-@-webkit-keyframes loader-block {
+@-webkit-keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
   100% {
-    opacity: 0;
-    z-index: -10;
+    transform: scale(0);
   }
 }
 
-@keyframes loader-block {
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
   100% {
-    opacity: 0;
-    z-index: -10;
+    transform: scale(0);
   }
 }
 @-webkit-keyframes rotation {

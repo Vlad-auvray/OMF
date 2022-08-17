@@ -51,15 +51,15 @@ header a{
 
 footer {
   background-color:#353535;
-  padding-left: 12px;
+  padding-left: 20px;
   padding-bottom: 30px;
 }
 
 .logo-footer {
     font-family: Shrikhand;
     color: white;
-    font-size: 25px;
-    padding-top: 10px;
+    font-size: 20px;
+    padding-top: 20px;
 }
 
 .footer_list {
@@ -147,7 +147,9 @@ h1 {
   font-family: Roboto;
   font-weight: bold;
   color: white;
-  padding: 20px 25px 20px 25px;
+  padding: 0px 25px 0px 25px;
+  width: 280px;
+  height: 60px;
   border-radius: 55px;
   background: linear-gradient(170deg, $color-secondary, $color-primary);
   border-style: none;
@@ -578,9 +580,8 @@ animation-delay: 100ms *$i;
   display: flex;
 align-content: center;
 justify-content: center;
-padding-top: 20px;
-
-
+padding-top: 15px;
+padding-bottom: 20px;
 }
 
 
@@ -592,7 +593,7 @@ padding-top: 20px;
 
 
 
-@media screen and (min-width: 789px) {
+@media screen and (min-width: 750px) {
 
 .anim-fonct{
   margin: auto;
@@ -617,6 +618,7 @@ padding-right: 35px;
 
 .restaurant {
   padding-right:15px;
+  padding-left: 15px;
 }
 
 .card-list {
@@ -632,6 +634,8 @@ padding-right: 35px;
 .detail_menu {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .detail_menu_sub {

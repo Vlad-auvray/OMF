@@ -47,40 +47,9 @@ header a{
   font-size: 2em;
 }
 
- /*footer*/
+ 
 
-footer {
-  background-color:#353535;
-  padding-left: 20px;
-  padding-bottom: 30px;
-}
-
-.logo-footer {
-    font-family: Shrikhand;
-    color: white;
-    font-size: 20px;
-    padding-top: 20px;
-}
-
-.footer_list {
-  font-family: Roboto;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  list-style-type: none ;
-  padding-left: 0;
-
-}
-
-.footer_list li {
-margin-bottom: 5px;
-margin-top: 5px;
-}
-
-.footer_list a{
-  text-decoration: none;
-  color: white;
-}
+/*Recherche*/
 
 .ville {
   display: flex;
@@ -164,13 +133,15 @@ text-align: center;
 }
 
 /*Fonctionnement*/
-.fonctionnement {
 
-  padding: 2rem 1rem;
+.fonctionnement{
+  padding-left: 15px;
+  font-family: Roboto;
 }
 
-.fonctionnement h1 {
+.fonctionnement h2 {
   margin-top: 0;
+  padding-left: 1%;
 }
 
 .anim-fonct {
@@ -231,7 +202,7 @@ color: $color-primary;
 }
 
 
-/*Restaurants*/
+/*Listes Restaurants*/
 
 .restaurant {
   background-color: #f6f6f6;
@@ -239,10 +210,11 @@ color: $color-primary;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 40px;
+  padding-left: 15px;
 }
 
-.restaurant h1 {
-  padding-left: 2%;
+.restaurant h2 {
+  padding-left: 1%;
 }
 
 .card-list{
@@ -589,10 +561,6 @@ padding-bottom: 20px;
 
 /*Responsive*/
 
-
-
-
-
 @media screen and (min-width: 750px) {
 
 .anim-fonct{
@@ -643,11 +611,8 @@ padding-right: 35px;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 30%;
 }
-
-
 
 .detail_menu_sub_card {
   display: flex;
@@ -747,3 +712,37 @@ justify-content: center;
 }
 
 
+/*footer*/
+
+footer {
+  background-color:#353535;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.logo-footer {
+    font-family: Shrikhand;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.footer_list {
+  font-family: Roboto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none ;
+  padding-left: 0;
+
+}
+
+.footer_list li {
+margin-bottom: 5px;
+margin-top: 5px;
+}
+
+.footer_list a{
+  text-decoration: none;
+  color: white;
+}
